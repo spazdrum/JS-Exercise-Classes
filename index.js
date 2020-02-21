@@ -85,6 +85,10 @@ class Car {
   }
 }
 
+Car.prototype.fill = function (gallons) {
+  this.tank += gallons;
+}
+
 /*
   TASK 3
     - Write a Lambdasian class.
