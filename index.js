@@ -89,6 +89,12 @@ Car.prototype.fill = function (gallons) {
   this.tank += gallons;
 }
 
+Car.prototype.drive = function (distance) {
+  this.odometer += distance;
+  const gallonsNeeded = distance / this.milesPerGallon;
+  this.tank -= gallonsNeeded;
+}
+
 /*
   TASK 3
     - Write a Lambdasian class.
